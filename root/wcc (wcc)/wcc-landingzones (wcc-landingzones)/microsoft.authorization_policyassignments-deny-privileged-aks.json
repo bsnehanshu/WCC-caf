@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deny-Privileged-AKS",
+      "apiVersion": "2020-09-01",
+      "location": "australiaeast",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "0d0efc82-696e-49ce-9714-f7270d782831",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/wcc-landingzones",
+        "NotScopes": null,
+        "DisplayName": "Deny-Privileged-Containers-AKS",
+        "Description": "Deny-Privileged-Containers-AKS",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/95edb821-ddaf-4404-9732-666045e056b4",
+        "Parameters": {
+          "effect": {
+            "value": "deny"
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}

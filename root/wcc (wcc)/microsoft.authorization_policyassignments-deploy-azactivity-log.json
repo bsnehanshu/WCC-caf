@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-AzActivity-Log",
+      "apiVersion": "2020-09-01",
+      "location": "australiaeast",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "4aaba5dd-45fa-49e1-93f6-72cc1ddb27d3",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/WCC",
+        "NotScopes": null,
+        "DisplayName": "Deploy-AzActivity-Log",
+        "Description": "Deploy-AzActivity-Log",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/WCC/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ActivityLog",
+        "Parameters": {
+          "logAnalytics": {
+            "value": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/resourcegroups/wcc-mgmt/providers/microsoft.operationalinsights/workspaces/wcc-la"
+          },
+          "logsEnabled": {
+            "value": "True"
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}

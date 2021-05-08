@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deny-Public-Endpoints",
+      "apiVersion": "2020-09-01",
+      "location": "australiaeast",
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/WCC-corp",
+        "NotScopes": null,
+        "DisplayName": "Deny-Public-Endpoints",
+        "Description": "Deny-Public-Endpoints",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/WCC/providers/Microsoft.Authorization/policySetDefinitions/Deny-PublicEndpoints",
+        "Parameters": {}
+      }
+    }
+  ],
+  "outputs": {}
+}
