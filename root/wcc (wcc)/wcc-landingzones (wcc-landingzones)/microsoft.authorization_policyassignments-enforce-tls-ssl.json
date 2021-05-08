@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Enforce-TLS-SSL",
+      "apiVersion": "2020-09-01",
+      "location": "australiaeast",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "b0b5ae77-855c-4132-ac14-4387222e12b3",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/WCC-landingzones",
+        "NotScopes": null,
+        "DisplayName": "Enforce-TLS-SSL",
+        "Description": "Enforce-TLS-SSL",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/WCC/providers/Microsoft.Authorization/policySetDefinitions/Enforce-EncryptTransit",
+        "Parameters": {}
+      }
+    }
+  ],
+  "outputs": {}
+}

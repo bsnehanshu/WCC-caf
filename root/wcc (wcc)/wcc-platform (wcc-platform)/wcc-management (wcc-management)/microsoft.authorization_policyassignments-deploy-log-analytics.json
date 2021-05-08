@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-Log-Analytics",
+      "apiVersion": "2020-09-01",
+      "location": "australiaeast",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "ba1d2a2d-0d72-4b96-be74-5c70b9c0160b",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/WCC-management",
+        "NotScopes": null,
+        "DisplayName": "Deploy-Log-Analytics",
+        "Description": "Deploy-Log-Analytics",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/WCC/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+        "Parameters": {
+          "workspaceName": {
+            "value": "WCC-la"
+          },
+          "automationAccountName": {
+            "value": "WCC-automation"
+          },
+          "workspaceRegion": {
+            "value": "australiaeast"
+          },
+          "automationRegion": {
+            "value": "australiaeast"
+          },
+          "rgName": {
+            "value": "WCC-mgmt"
+          },
+          "retentionInDays": {
+            "value": "30"
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}
