@@ -49,7 +49,7 @@
               "name": "WCC-online",
               "scope": "/",
               "properties": {
-                "displayName": "WCC-online",
+                "displayName": "WCC-online1",
                 "details": {
                   "parent": {
                     "id": "/providers/Microsoft.Management/managementGroups/WCC-landingzones"
