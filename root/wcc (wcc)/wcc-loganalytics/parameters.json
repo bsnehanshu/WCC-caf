@@ -2,17 +2,16 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "name": {
-            "value": "WCC-la-new"
+        "rgName": {
+            "value": "RG-through-GIT"
         },
-        "location": {
+        "rgLocation": {
             "value": "australiaeast"
         },
-        "sku": {
-            "value": "pergb2018"
-        },
         "tags": {
-            "value": {}
+            "value": {
+                "envi": "prod"
+            }
         }
     }
 }
