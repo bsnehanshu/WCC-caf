@@ -10,7 +10,7 @@
       "apiVersion": "2021-04-01",
       "scope": "/",
       "properties": {
-        "displayName": "WCC-online1",
+        "displayName": "WCC-online",
         "details": {
           "parent": {
             "id": "/providers/Microsoft.Management/managementGroups/WCC-landingzones"
