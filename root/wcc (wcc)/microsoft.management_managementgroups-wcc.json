@@ -32,20 +32,6 @@
             {
               "type": "Microsoft.Management/managementGroups",
               "apiVersion": "2020-05-01",
-              "name": "WCC-decommissioned",
-              "scope": "/",
-              "properties": {
-                "displayName": "WCC-decommissioned",
-                "details": {
-                  "parent": {
-                    "id": "/providers/Microsoft.Management/managementGroups/WCC"
-                  }
-                }
-              }
-            },
-            {
-              "type": "Microsoft.Management/managementGroups",
-              "apiVersion": "2020-05-01",
               "name": "WCC-sandboxes",
               "scope": "/",
               "properties": {
