@@ -6,14 +6,14 @@
   "resources": [
     {
       "type": "Microsoft.Management/managementGroups",
-      "name": "WCC-management",
+      "name": "mg-connectivity",
       "apiVersion": "2021-04-01",
       "scope": "/",
       "properties": {
-        "displayName": "WCC-management",
+        "displayName": "mg-connectivity",
         "details": {
           "parent": {
-            "id": "/providers/Microsoft.Management/managementGroups/WCC-platform"
+            "id": "/providers/Microsoft.Management/managementGroups/mg-platform"
           }
         }
       }
@@ -28,12 +28,19 @@
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
           "contentVersion": "1.0.0.0",
-          "resources": [],
+          "resources": [
+            {
+              "type": "Microsoft.Management/managementGroups/subscriptions",
+              "apiVersion": "2021-04-01",
+              "name": "mg-connectivity/78849b8b-1390-40a2-bc79-75236969c656",
+              "scope": "/"
+            }
+          ],
           "outputs": {}
         }
       },
       "dependsOn": [
-        "/providers/Microsoft.Management/managementGroups/WCC-management"
+        "/providers/Microsoft.Management/managementGroups/mg-connectivity"
       ]
     }
   ],
