@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "monitoring_governance_built_in",
+      "apiVersion": "2020-09-01",
+      "location": "australiaeast",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "9f1a57e9-51b6-4a65-955e-2202ccd2c2a8",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656",
+        "NotScopes": null,
+        "DisplayName": "Azure Monitor",
+        "Description": "Enable Azure Monitor for the virtual machines (VMs) in the specified scope (management group, subscription or resource group).",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/55f3eceb-5573-4f18-9695-226972c6d74a",
+        "Parameters": {
+          "logAnalytics_1": {
+            "value": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/resourcegroups/rg-logs-hub-ae/providers/microsoft.operationalinsights/workspaces/la-hubcvsk8n-ae"
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}

@@ -10,7 +10,7 @@
       "apiVersion": "2021-04-01",
       "scope": "/",
       "properties": {
-        "displayName": "WCC-sandbox1",
+        "displayName": "WCC-sandbox",
         "details": {
           "parent": {
             "id": "/providers/Microsoft.Management/managementGroups/WCC"
