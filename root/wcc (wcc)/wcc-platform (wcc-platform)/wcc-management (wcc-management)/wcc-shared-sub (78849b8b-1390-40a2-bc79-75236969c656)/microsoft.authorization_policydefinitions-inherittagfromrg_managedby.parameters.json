@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "inheritTagFromRG_ManagedBy",
+        "ResourceType": "Microsoft.Authorization/policyDefinitions",
+        "Properties": {
+          "Description": "Adds the specified mandatory tag ManagedBy with its value from the parent resource group when any resource missing this tag is created or updated. Existing resources can be remediated by triggering a remediation task. If the tag exists with a different value it will not be changed.",
+          "DisplayName": "Inherit tag ManagedBy from the resource group",
+          "Mode": "Indexed",
+          "Parameters": {
+            "tagName": {
+              "type": "String",
+              "metadata": {
+                "description": "Name of the tag, such as 'ManagedBy'",
+                "displayName": "Mandatory Tag ManagedBy"
+              },
+              "defaultValue": "ManagedBy"
+            }
+          },
+          "PolicyRule": {
+            "if": {
+              "allOf": [
+                {
+                  "exists": "false",
+                  "field": "[concat('tags[', parameters('tagName'), ']')]"
+                },
+                {
+                  "notEquals": "",
+                  "value": "[resourceGroup().tags[parameters('tagName')]]"
+                }
+              ]
+            },
+            "then": {
+              "details": {
+                "operations": [
+                  {
+                    "field": "[concat('tags[', parameters('tagName'), ']')]",
+                    "operation": "add",
+                    "value": "[resourceGroup().tags[parameters('tagName')]]"
+                  }
+                ],
+                "roleDefinitionIds": [
+                  "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+                ]
+              },
+              "effect": "modify"
+            }
+          }
+        }
+      }
+    }
+  }
+}
