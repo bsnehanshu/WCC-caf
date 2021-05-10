@@ -6,14 +6,14 @@
   "resources": [
     {
       "type": "Microsoft.Management/managementGroups",
-      "name": "WCC-management",
+      "name": "mg-online",
       "apiVersion": "2021-04-01",
       "scope": "/",
       "properties": {
-        "displayName": "WCC-management",
+        "displayName": "mg-online",
         "details": {
           "parent": {
-            "id": "/providers/Microsoft.Management/managementGroups/WCC-platform"
+            "id": "/providers/Microsoft.Management/managementGroups/mg-landingzones"
           }
         }
       }
@@ -33,7 +33,7 @@
         }
       },
       "dependsOn": [
-        "/providers/Microsoft.Management/managementGroups/WCC-management"
+        "/providers/Microsoft.Management/managementGroups/mg-online"
       ]
     }
   ],

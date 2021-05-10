@@ -6,14 +6,14 @@
   "resources": [
     {
       "type": "Microsoft.Management/managementGroups",
-      "name": "WCC-management",
+      "name": "mg-landingzones",
       "apiVersion": "2021-04-01",
       "scope": "/",
       "properties": {
-        "displayName": "WCC-management",
+        "displayName": "mg-landingzones",
         "details": {
           "parent": {
-            "id": "/providers/Microsoft.Management/managementGroups/WCC-platform"
+            "id": "/providers/Microsoft.Management/managementGroups/mg"
           }
         }
       }
@@ -28,12 +28,27 @@
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
           "contentVersion": "1.0.0.0",
-          "resources": [],
+          "resources": [
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "mg-online",
+              "scope": "/",
+              "properties": {
+                "displayName": "mg-online",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/mg-landingzones"
+                  }
+                }
+              }
+            }
+          ],
           "outputs": {}
         }
       },
       "dependsOn": [
-        "/providers/Microsoft.Management/managementGroups/WCC-management"
+        "/providers/Microsoft.Management/managementGroups/mg-landingzones"
       ]
     }
   ],
