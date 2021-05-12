@@ -10,7 +10,7 @@
       "apiVersion": "2021-04-01",
       "scope": "/",
       "properties": {
-        "displayName": "mg-management",
+        "displayName": "mg-logs",
         "details": {
           "parent": {
             "id": "/providers/Microsoft.Management/managementGroups/mg-platform"
