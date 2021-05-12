@@ -6,16 +6,16 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "mg-connectivity",
+      "name": "mg-mgmt",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Application": "'TBC'",
+        "Support": "'TBC'",
         "CostCentre": "'TBC'",
-        "ManagedBy": "'TBC'",
         "Environment": "'TBC'",
+        "Application": "'TBC'",
         "Owner": "'TBC'",
-        "Support": "'TBC'"
+        "ManagedBy": "'TBC'"
       },
       "properties": {}
     }
