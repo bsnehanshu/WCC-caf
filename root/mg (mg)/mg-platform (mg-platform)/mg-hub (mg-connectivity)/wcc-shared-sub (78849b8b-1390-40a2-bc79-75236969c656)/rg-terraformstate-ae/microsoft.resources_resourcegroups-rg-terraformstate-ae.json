@@ -9,7 +9,14 @@
       "name": "rg-terraformstate-ae",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
-      "tags": {},
+      "tags": {
+        "CostCentre": "'TBC'",
+        "Owner": "'TBC'",
+        "Application": "'TBC'",
+        "Environment": "'TBC'",
+        "ManagedBy": "'TBC'",
+        "Support": "'TBC'"
+      },
       "properties": {}
     }
   ],
