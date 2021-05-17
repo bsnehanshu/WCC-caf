@@ -12,10 +12,10 @@
       "tags": {
         "ManagedBy": "'TBC'",
         "CostCentre": "'TBC'",
-        "Support": "'TBC'",
+        "Environment": "'TBC'",
         "Application": "'TBC'",
-        "Owner": "'TBC'",
-        "Environment": "'TBC'"
+        "Support": "'TBC'",
+        "Owner": "'TBC'"
       },
       "properties": {}
     }
