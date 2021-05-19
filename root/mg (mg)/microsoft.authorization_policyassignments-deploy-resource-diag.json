@@ -16,7 +16,7 @@
       },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/mg",
-        "NotScopes": null,
+        "NotScopes": [],
         "DisplayName": "Deploy-Resource-Diag",
         "Description": "Deploy-Resource-Diag",
         "EnforcementMode": "Default",
