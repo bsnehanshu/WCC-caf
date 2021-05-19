@@ -9,7 +9,9 @@
       "name": "SB-linked-RG",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
-      "tags": null,
+      "tags": {
+        "Application": "'TBC'"
+      },
       "properties": {}
     }
   ],

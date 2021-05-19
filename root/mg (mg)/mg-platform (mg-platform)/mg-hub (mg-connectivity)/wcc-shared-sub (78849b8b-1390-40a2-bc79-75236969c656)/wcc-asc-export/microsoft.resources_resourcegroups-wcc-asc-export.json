@@ -9,7 +9,9 @@
       "name": "WCC-asc-export",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
-      "tags": {},
+      "tags": {
+        "Application": "'TBC'"
+      },
       "properties": {}
     }
   ],
