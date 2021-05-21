@@ -12,10 +12,10 @@
       "tags": {
         "Support": "TBC",
         "Environment": "hub",
-        "CostCentre": "TBC",
-        "Application": "TBC",
         "ManagedBy": "TBC",
         "terraform_managed": "true",
+        "Application": "TBC",
+        "CostCentre": "TBC",
         "Owner": "TBC"
       },
       "properties": {}

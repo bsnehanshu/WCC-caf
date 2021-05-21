@@ -12,9 +12,9 @@
       "tags": {
         "Support": "'TBC'",
         "Environment": "'prod'",
-        "CostCentre": "'marketing'",
-        "Application": "'cloudyapp'",
         "ManagedBy": "'sneh'",
+        "Application": "'cloudyapp'",
+        "CostCentre": "'marketing'",
         "Owner": "'sneh'"
       },
       "properties": {}
