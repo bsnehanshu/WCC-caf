@@ -11,10 +11,10 @@
       "location": "australiaeast",
       "tags": {
         "Application": "'TBC'",
-        "Support": "'TBC'",
         "CostCentre": "'TBC'",
-        "Owner": "'TBC'",
+        "Support": "'TBC'",
         "Environment": "'TBC'",
+        "Owner": "'TBC'",
         "ManagedBy": "'TBC'"
       },
       "properties": {}
