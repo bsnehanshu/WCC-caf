@@ -1,0 +1,58 @@
+{
+ "properties": {
+  "displayName": "Inherit tag Support from the resource group",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "Adds the specified mandatory tag Support with its value from the parent resource group when any resource missing this tag is created or updated. Existing resources can be remediated by triggering a remediation task. If the tag exists with a different value it will not be changed.",
+  "metadata": {
+   "category": "Custom",
+   "version": "1.0.0",
+   "createdBy": "89f24097-edea-4bf2-9073-306958084de4",
+   "createdOn": "2021-05-10T05:53:54.4342916Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "tagName": {
+    "type": "String",
+    "metadata": {
+     "description": "Name of the tag, such as 'Support'",
+     "displayName": "Mandatory Tag Support"
+    },
+    "defaultValue": "Support"
+   }
+  },
+  "policyRule": {
+   "if": {
+    "allOf": [
+     {
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName'), ']')]"
+     },
+     {
+      "notEquals": "",
+      "value": "[resourceGroup().tags[parameters('tagName')]]"
+     }
+    ]
+   },
+   "then": {
+    "details": {
+     "operations": [
+      {
+       "field": "[concat('tags[', parameters('tagName'), ']')]",
+       "operation": "add",
+       "value": "[resourceGroup().tags[parameters('tagName')]]"
+      }
+     ],
+     "roleDefinitionIds": [
+      "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+     ]
+    },
+    "effect": "modify"
+   }
+  }
+ },
+ "id": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Support",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "inheritTagFromRG_Support"
+}

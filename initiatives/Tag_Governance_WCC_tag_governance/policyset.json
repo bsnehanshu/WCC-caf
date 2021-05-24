@@ -1,0 +1,117 @@
+{
+ "properties": {
+  "displayName": "Tag Governance WCC",
+  "policyType": "Custom",
+  "description": "Contains common Tag Governance policies",
+  "metadata": {
+   "category": "Custom",
+   "createdBy": "89f24097-edea-4bf2-9073-306958084de4",
+   "createdOn": "2021-05-10T05:58:34.0682702Z",
+   "updatedBy": "363f36e7-85b1-4fe2-b88c-a85733dd9d4a",
+   "updatedOn": "2021-05-18T23:36:44.4636125Z"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Application",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Application",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Environment",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Environment",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_ManagedBy",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_ManagedBy",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Owner",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Owner",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Support",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Support",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Application",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Application",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Environment",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Environment",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_ManagedBy",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_ManagedBy",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Owner",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Owner",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Support",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Support",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Application_OverwriteExisting",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Application_OverwriteExisting",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Environment_OverwriteExisting",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Environment_OverwriteExisting",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_ManagedBy_OverwriteExisting",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_ManagedBy_OverwriteExisting",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Owner_OverwriteExisting",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Owner_OverwriteExisting",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Support_OverwriteExisting",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Support_OverwriteExisting",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/bulkInheritTagsFromRG",
+    "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/bulkInheritTagsFromRG",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policySetDefinitions/tag_governance",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "tag_governance"
+}

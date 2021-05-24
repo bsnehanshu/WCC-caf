@@ -1,0 +1,64 @@
+name: manage-azure-policy-b6f85ac9
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Updating Azure Policies'
+
+
+## Uncomment the following if you wish to automatically trigger workflow run with every commit
+#
+#  push:
+#    paths:
+#      - 'policies/Inherit_tag_Support_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_Support_OverwriteExisting/**'
+#      - 'initiatives/Tag_Governance_WCC_tag_governance/**'
+#      - 'policies/Inherit_tag_Support_from_the_resource_group_inheritTagFromRG_Support/**'
+#      - 'policies/Inherit_tag_Owner_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_Owner_OverwriteExisting/**'
+#      - 'policies/Inherit_tag_Owner_from_the_resource_group_inheritTagFromRG_Owner/**'
+#      - 'policies/Inherit_tag_ManagedBy_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_ManagedBy_OverwriteExisting/**'
+#      - 'policies/Inherit_tag_ManagedBy_from_the_resource_group_inheritTagFromRG_ManagedBy/**'
+#      - 'policies/Inherit_tag_Environment_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_Environment_OverwriteExisting/**'
+#      - 'policies/Inherit_tag_Environment_from_the_resource_group_inheritTagFromRG_Environment/**'
+#      - 'policies/Inherit_tag_Application_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_Application_OverwriteExisting/**'
+#      - 'policies/Inherit_tag_Application_from_the_resource_group_inheritTagFromRG_Application/**'
+#      - 'policies/Bulk_inherit_tags_from_the_resource_group_bulkInheritTagsFromRG/**'
+#      - 'policies/Add_tag_Support_to_resource_group_addTagToRG_Support/**'
+#      - 'policies/Add_tag_Owner_to_resource_group_addTagToRG_Owner/**'
+#      - 'policies/Add_tag_ManagedBy_to_resource_group_addTagToRG_ManagedBy/**'
+#      - 'policies/Add_tag_Environment_to_resource_group_addTagToRG_Environment/**'
+#      - 'policies/Add_tag_Application_to_resource_group_addTagToRG_Application/**'
+#      - .github/workflows/manage-azure-policy-b6f85ac9.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_b6f85ac9}}
+        allow-no-subscriptions: true
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          policies/Inherit_tag_Support_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_Support_OverwriteExisting/**
+          initiatives/Tag_Governance_WCC_tag_governance/**
+          policies/Inherit_tag_Support_from_the_resource_group_inheritTagFromRG_Support/**
+          policies/Inherit_tag_Owner_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_Owner_OverwriteExisting/**
+          policies/Inherit_tag_Owner_from_the_resource_group_inheritTagFromRG_Owner/**
+          policies/Inherit_tag_ManagedBy_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_ManagedBy_OverwriteExisting/**
+          policies/Inherit_tag_ManagedBy_from_the_resource_group_inheritTagFromRG_ManagedBy/**
+          policies/Inherit_tag_Environment_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_Environment_OverwriteExisting/**
+          policies/Inherit_tag_Environment_from_the_resource_group_inheritTagFromRG_Environment/**
+          policies/Inherit_tag_Application_from_the_resource_group_&_overwrite_existing_inheritTagFromRG_Application_OverwriteExisting/**
+          policies/Inherit_tag_Application_from_the_resource_group_inheritTagFromRG_Application/**
+          policies/Bulk_inherit_tags_from_the_resource_group_bulkInheritTagsFromRG/**
+          policies/Add_tag_Support_to_resource_group_addTagToRG_Support/**
+          policies/Add_tag_Owner_to_resource_group_addTagToRG_Owner/**
+          policies/Add_tag_ManagedBy_to_resource_group_addTagToRG_ManagedBy/**
+          policies/Add_tag_Environment_to_resource_group_addTagToRG_Environment/**
+          policies/Add_tag_Application_to_resource_group_addTagToRG_Application/**
