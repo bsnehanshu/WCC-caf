@@ -11,12 +11,12 @@
       "location": "australiaeast",
       "tags": {
         "Environment": "hub",
-        "Support": "TBC",
-        "Application": "TBC",
-        "ManagedBy": "TBC",
-        "Owner": "TBC",
+        "terraform_managed": "true",
         "CostCentre": "TBC",
-        "terraform_managed": "true"
+        "Application": "TBC",
+        "Owner": "TBC",
+        "ManagedBy": "TBC",
+        "Support": "TBC"
       },
       "properties": {}
     }
