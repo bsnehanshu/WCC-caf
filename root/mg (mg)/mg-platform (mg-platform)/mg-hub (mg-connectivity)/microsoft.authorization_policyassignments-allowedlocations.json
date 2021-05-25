@@ -16,7 +16,7 @@
       },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/mg-connectivity",
-        "NotScopes": null,
+        "NotScopes": [],
         "DisplayName": "Policy to ringfence Azure regions.",
         "Description": "Policy to ringfence Azure regions.",
         "EnforcementMode": "Default",
@@ -24,7 +24,8 @@
         "Parameters": {
           "listOfAllowedLocations": {
             "value": [
-              "australiaeast"
+              "australiaeast",
+              "australiasoutheast"
             ]
           }
         }
