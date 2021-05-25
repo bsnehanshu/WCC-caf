@@ -39,12 +39,6 @@
             "groupNames": []
           },
           {
-            "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Support",
-            "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/addTagToRG_Support",
-            "parameters": {},
-            "groupNames": []
-          },
-          {
             "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Application",
             "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Application",
             "parameters": {},
@@ -95,12 +89,6 @@
           {
             "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Owner_OverwriteExisting",
             "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Owner_OverwriteExisting",
-            "parameters": {},
-            "groupNames": []
-          },
-          {
-            "policyDefinitionReferenceId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Support_OverwriteExisting",
-            "policyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policyDefinitions/inheritTagFromRG_Support_OverwriteExisting",
             "parameters": {},
             "groupNames": []
           },
