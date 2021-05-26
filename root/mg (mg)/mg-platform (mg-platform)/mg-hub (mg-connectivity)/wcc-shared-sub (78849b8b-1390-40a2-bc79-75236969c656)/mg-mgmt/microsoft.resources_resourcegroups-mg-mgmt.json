@@ -11,11 +11,11 @@
       "location": "australiaeast",
       "tags": {
         "CostCentre": "'marketing'",
-        "Owner": "'sneh'",
         "Support": "'TBC'",
         "ManagedBy": "'sneh'",
         "Application": "'cloudyapp'",
-        "Environment": "'prod'"
+        "Environment": "'prod'",
+        "Owner": "'sneh'"
       },
       "properties": {}
     }
