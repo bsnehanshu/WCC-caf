@@ -10,12 +10,12 @@
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
+        "Application": "'cloudyapp'",
+        "Environment": "'prod'",
         "ManagedBy": "'sneh'",
         "Owner": "'sneh'",
-        "Support": "'TBC'",
         "CostCentre": "'marketing'",
-        "Environment": "'prod'",
-        "Application": "'cloudyapp'"
+        "Support": "'TBC'"
       },
       "properties": {}
     }
