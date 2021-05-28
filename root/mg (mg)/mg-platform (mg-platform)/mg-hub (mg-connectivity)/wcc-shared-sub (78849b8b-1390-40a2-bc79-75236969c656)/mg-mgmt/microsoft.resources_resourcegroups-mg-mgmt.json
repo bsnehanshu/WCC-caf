@@ -11,10 +11,10 @@
       "location": "australiaeast",
       "tags": {
         "Application": "'cloudyapp'",
-        "Support": "'TBC'",
-        "Environment": "'prod'",
-        "CostCentre": "'marketing'",
         "ManagedBy": "'sneh'",
+        "Support": "'TBC'",
+        "CostCentre": "'marketing'",
+        "Environment": "'prod'",
         "Owner": "'sneh'"
       },
       "properties": {}
