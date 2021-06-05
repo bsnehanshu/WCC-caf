@@ -6,17 +6,10 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "mg-connectivity",
+      "name": "DefaultResourceGroup-CIN",
       "apiVersion": "2019-05-01",
-      "location": "australiaeast",
-      "tags": {
-        "Application": "'TBC'",
-        "Environment": "'TBC'",
-        "ManagedBy": "'TBC'",
-        "Owner": "'TBC'",
-        "CostCentre": "'TBC'",
-        "Support": "'TBC'"
-      },
+      "location": "centralindia",
+      "tags": {},
       "properties": {}
     }
   ],

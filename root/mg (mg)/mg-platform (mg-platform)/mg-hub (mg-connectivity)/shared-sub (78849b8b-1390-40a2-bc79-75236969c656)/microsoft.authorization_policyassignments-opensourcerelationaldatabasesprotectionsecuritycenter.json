@@ -6,16 +6,16 @@
   "resources": [
     {
       "type": "Microsoft.Authorization/policyAssignments",
-      "name": "data_protection_governance",
+      "name": "OpenSourceRelationalDatabasesProtectionSecurityCenter",
       "apiVersion": "2020-09-01",
       "location": null,
       "properties": {
         "Scope": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656",
         "NotScopes": null,
-        "DisplayName": "Data Protection Governance",
-        "Description": "Assignment of the Data Protection Governance initiative to subscription.",
+        "DisplayName": "ASC OpenSourceRelationalDatabasesProtection (subscription: 78849b8b-1390-40a2-bc79-75236969c656)",
+        "Description": "This policy assignment was automatically created by Azure Security Center",
         "EnforcementMode": "Default",
-        "PolicyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policySetDefinitions/data_protection_governance",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/e77fc0b3-f7e9-4c58-bc13-cb753ed8e46e",
         "Parameters": null
       }
     }

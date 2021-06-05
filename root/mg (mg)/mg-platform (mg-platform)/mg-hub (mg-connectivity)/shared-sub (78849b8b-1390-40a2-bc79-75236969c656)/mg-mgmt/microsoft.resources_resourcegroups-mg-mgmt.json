@@ -6,17 +6,16 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "rg-diag-st-hub-ae",
+      "name": "mg-mgmt",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Application": "TBC",
-        "Environment": "hub",
-        "terraform_managed": "true",
-        "ManagedBy": "TBC",
-        "Owner": "TBC",
-        "CostCentre": "TBC",
-        "Support": "TBC"
+        "Owner": "'sneh'",
+        "ManagedBy": "'sneh'",
+        "Environment": "'prod'",
+        "Application": "'cloudyapp'",
+        "Support": "'TBC'",
+        "CostCentre": "'marketing'"
       },
       "properties": {}
     }

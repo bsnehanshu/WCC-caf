@@ -6,15 +6,17 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "testrg",
+      "name": "rg-logs-hub-ae",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Application": "'TBC'",
-        "ManagedBy": "'TBC'",
-        "Support": "'TBC'",
-        "Environment": "'TBC'",
-        "Owner": "'TBC'"
+        "Owner": "TBC",
+        "ManagedBy": "TBC",
+        "Environment": "hub",
+        "Application": "TBC",
+        "Support": "TBC",
+        "terraform_managed": "true",
+        "CostCentre": "TBC"
       },
       "properties": {}
     }
