@@ -6,16 +6,17 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "mg-asc-export",
+      "name": "rg-rsv-hub-ae",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Application": "'TBC'",
-        "Environment": "'TBC'",
-        "ManagedBy": "'TBC'",
-        "Owner": "'TBC'",
-        "CostCentre": "'TBC'",
-        "Support": "'TBC'"
+        "Owner": "TBC",
+        "ManagedBy": "TBC",
+        "Environment": "hub",
+        "Application": "TBC",
+        "Support": "TBC",
+        "terraform_managed": "true",
+        "CostCentre": "TBC"
       },
       "properties": {}
     }

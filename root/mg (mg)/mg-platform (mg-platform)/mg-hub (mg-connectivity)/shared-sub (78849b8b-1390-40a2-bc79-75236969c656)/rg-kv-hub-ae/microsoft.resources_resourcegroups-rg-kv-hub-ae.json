@@ -6,16 +6,17 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "mg-mgmt",
+      "name": "rg-kv-hub-ae",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Application": "'cloudyapp'",
-        "Environment": "'prod'",
-        "ManagedBy": "'sneh'",
-        "Owner": "'sneh'",
-        "CostCentre": "'marketing'",
-        "Support": "'TBC'"
+        "Owner": "TBC",
+        "ManagedBy": "TBC",
+        "Environment": "hub",
+        "Application": "TBC",
+        "Support": "TBC",
+        "terraform_managed": "true",
+        "CostCentre": "TBC"
       },
       "properties": {}
     }

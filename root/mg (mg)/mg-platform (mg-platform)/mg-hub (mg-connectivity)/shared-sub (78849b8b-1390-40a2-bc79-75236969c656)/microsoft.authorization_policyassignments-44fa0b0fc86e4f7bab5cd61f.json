@@ -6,22 +6,17 @@
   "resources": [
     {
       "type": "Microsoft.Authorization/policyAssignments",
-      "name": "security_governance_built_in",
+      "name": "44fa0b0fc86e4f7bab5cd61f",
       "apiVersion": "2020-09-01",
-      "location": "australiaeast",
-      "identity": {
-        "type": "SystemAssigned",
-        "principalId": "9632e8b8-7295-46d9-8564-54f413aad53c",
-        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
-      },
+      "location": null,
       "properties": {
         "Scope": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656",
-        "NotScopes": null,
-        "DisplayName": "Azure Security Center",
-        "Description": "Assignment of the built in Azure Security Center initiative to subscription.",
+        "NotScopes": [],
+        "DisplayName": "Azure Security Benchmark",
+        "Description": null,
         "EnforcementMode": "Default",
         "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
-        "Parameters": null
+        "Parameters": {}
       }
     }
   ],

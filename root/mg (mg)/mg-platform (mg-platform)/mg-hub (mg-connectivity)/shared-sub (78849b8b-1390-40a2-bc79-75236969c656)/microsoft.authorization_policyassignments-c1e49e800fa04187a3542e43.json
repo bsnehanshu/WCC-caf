@@ -6,17 +6,17 @@
   "resources": [
     {
       "type": "Microsoft.Authorization/policyAssignments",
-      "name": "DataProtectionSecurityCenter",
+      "name": "c1e49e800fa04187a3542e43",
       "apiVersion": "2020-09-01",
       "location": null,
       "properties": {
         "Scope": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656",
-        "NotScopes": null,
-        "DisplayName": "ASC DataProtection (subscription: 78849b8b-1390-40a2-bc79-75236969c656)",
-        "Description": "This policy assignment was automatically created by Azure Security Center",
+        "NotScopes": [],
+        "DisplayName": "Azure Security Benchmark",
+        "Description": null,
         "EnforcementMode": "Default",
-        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/9cb3cc7a-b39b-4b82-bc89-e5a5d9ff7b97",
-        "Parameters": null
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+        "Parameters": {}
       }
     }
   ],

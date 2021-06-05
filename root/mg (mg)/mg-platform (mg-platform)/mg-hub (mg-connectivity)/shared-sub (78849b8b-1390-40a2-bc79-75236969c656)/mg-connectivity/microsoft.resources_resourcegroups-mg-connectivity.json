@@ -6,17 +6,16 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "rg-rsv-hub-ae",
+      "name": "mg-connectivity",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Application": "TBC",
-        "Environment": "hub",
-        "terraform_managed": "true",
-        "ManagedBy": "TBC",
-        "Owner": "TBC",
-        "CostCentre": "TBC",
-        "Support": "TBC"
+        "Owner": "'TBC'",
+        "ManagedBy": "'TBC'",
+        "Environment": "'TBC'",
+        "Application": "'TBC'",
+        "Support": "'TBC'",
+        "CostCentre": "'TBC'"
       },
       "properties": {}
     }

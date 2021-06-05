@@ -11,7 +11,7 @@
       "location": "centralus",
       "identity": {
         "type": "SystemAssigned",
-        "principalId": "accd3910-cf10-4b95-975c-8ef20fb1aeee",
+        "principalId": "73a30d63-0f8f-4849-86ff-00a805c8cd23",
         "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
       },
       "properties": {
