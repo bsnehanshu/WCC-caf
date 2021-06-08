@@ -10,11 +10,11 @@
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Application": "'TBC'",
         "Owner": "'TBC'",
-        "Environment": "'TBC'",
-        "CostCentre": "'TBC'",
         "Support": "'TBC'",
+        "CostCentre": "'TBC'",
+        "Environment": "'TBC'",
+        "Application": "'TBC'",
         "ManagedBy": "'TBC'"
       },
       "properties": {}
