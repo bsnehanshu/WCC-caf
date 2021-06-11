@@ -11,12 +11,12 @@
       "location": "australiaeast",
       "tags": {
         "region": "nzcentral",
-        "CostCentre": "'marketing'",
-        "Environment": "'prod'",
         "ManagedBy": "'sneh'",
         "Support": "'TBC'",
-        "Application": "'cloudyapp'",
-        "Owner": "'sneh'"
+        "Environment": "'prod'",
+        "CostCentre": "'marketing'",
+        "Owner": "'sneh'",
+        "Application": "'cloudyapp'"
       },
       "properties": {}
     }
