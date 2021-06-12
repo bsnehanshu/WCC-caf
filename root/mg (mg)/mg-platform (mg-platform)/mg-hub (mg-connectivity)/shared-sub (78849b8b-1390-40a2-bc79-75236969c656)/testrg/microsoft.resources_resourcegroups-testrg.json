@@ -12,9 +12,9 @@
       "tags": {
         "Application": "'TBC'",
         "Environment": "'TBC'",
-        "Support": "'TBC'",
         "ManagedBy": "'TBC'",
-        "Owner": "'TBC'"
+        "Owner": "'TBC'",
+        "Support": "'TBC'"
       },
       "properties": {}
     }
