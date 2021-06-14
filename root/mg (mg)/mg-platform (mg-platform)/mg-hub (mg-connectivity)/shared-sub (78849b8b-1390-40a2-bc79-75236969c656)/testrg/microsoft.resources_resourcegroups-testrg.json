@@ -11,9 +11,9 @@
       "location": "australiaeast",
       "tags": {
         "Owner": "'TBC'",
-        "Environment": "'TBC'",
-        "Support": "'TBC'",
         "ManagedBy": "'TBC'",
+        "Support": "'TBC'",
+        "Environment": "'TBC'",
         "Application": "'TBC'"
       },
       "properties": {}
