@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-AzActivity-Log",
+      "apiVersion": "2020-09-01",
+      "location": "australiaeast",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "73643b9c-4049-4335-a614-fe4f458b8df2",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/bb",
+        "NotScopes": null,
+        "DisplayName": "Deploy-AzActivity-Log",
+        "Description": "Deploy-AzActivity-Log",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2465583e-4e78-4c15-b6be-a36cbc7c8b0f",
+        "Parameters": {
+          "logAnalytics": {
+            "value": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/resourcegroups/bb-mgmt/providers/microsoft.operationalinsights/workspaces/bb-la"
+          },
+          "logsEnabled": {
+            "value": "True"
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}
