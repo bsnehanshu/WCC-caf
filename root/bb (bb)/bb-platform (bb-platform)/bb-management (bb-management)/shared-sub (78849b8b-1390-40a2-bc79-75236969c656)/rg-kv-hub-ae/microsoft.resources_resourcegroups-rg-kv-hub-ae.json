@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "name": "rg-kv-hub-ae",
+      "apiVersion": "2019-05-01",
+      "location": "australiaeast",
+      "tags": {
+        "Owner": "TBC",
+        "terraform_managed": "true",
+        "Application": "TBC",
+        "CostCentre": "TBC",
+        "ManagedBy": "TBC",
+        "Environment": "hub",
+        "Support": "TBC"
+      },
+      "properties": {}
+    }
+  ],
+  "outputs": {}
+}
