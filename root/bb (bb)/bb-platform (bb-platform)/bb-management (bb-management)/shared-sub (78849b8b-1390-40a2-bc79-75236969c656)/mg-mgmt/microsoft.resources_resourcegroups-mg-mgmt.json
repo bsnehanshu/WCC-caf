@@ -10,13 +10,13 @@
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "region": "nzcentral",
         "ManagedBy": "'sneh'",
         "Application": "'cloudyapp'",
         "Support": "'TBC'",
-        "Owner": "'sneh'",
         "CostCentre": "'marketing'",
-        "Environment": "'prod'"
+        "Owner": "'sneh'",
+        "Environment": "'prod'",
+        "region": "nzcentral"
       },
       "properties": {}
     }
