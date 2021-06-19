@@ -12,11 +12,11 @@
       "tags": {
         "terraform_managed": "true",
         "Owner": "TBC",
-        "ManagedBy": "TBC",
-        "CostCentre": "TBC",
-        "Environment": "hub",
         "Support": "TBC",
-        "Application": "TBC"
+        "CostCentre": "TBC",
+        "Application": "TBC",
+        "Environment": "hub",
+        "ManagedBy": "TBC"
       },
       "properties": {}
     }
