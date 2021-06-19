@@ -10,13 +10,13 @@
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Environment": "hub",
-        "terraform_managed": "true",
-        "Support": "TBC",
-        "CostCentre": "TBC",
         "Owner": "TBC",
+        "Support": "TBC",
         "ManagedBy": "TBC",
-        "Application": "TBC"
+        "Application": "TBC",
+        "Environment": "hub",
+        "CostCentre": "TBC",
+        "terraform_managed": "true"
       },
       "properties": {}
     }
