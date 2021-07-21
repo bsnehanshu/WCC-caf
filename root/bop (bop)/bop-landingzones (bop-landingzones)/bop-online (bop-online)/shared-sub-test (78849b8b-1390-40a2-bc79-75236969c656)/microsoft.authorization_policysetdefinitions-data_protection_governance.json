@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policySetDefinitions",
+      "name": "data_protection_governance",
+      "apiVersion": "2021-06-01",
+      "properties": {
+        "Description": "Contains common Data Protection Governance policies",
+        "DisplayName": "Data Protection Governance",
+        "Parameters": null,
+        "PolicyDefinitionGroups": null,
+        "PolicyDefinitions": [
+          {
+            "policyDefinitionReferenceId": "/providers/Microsoft.Authorization/policyDefinitions/013e242c-8828-4970-87b3-ab247555486d",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/013e242c-8828-4970-87b3-ab247555486d",
+            "parameters": {}
+          },
+          {
+            "policyDefinitionReferenceId": "/providers/Microsoft.Authorization/policyDefinitions/d38fc420-0735-4ef3-ac11-c806f651a570",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d38fc420-0735-4ef3-ac11-c806f651a570",
+            "parameters": {}
+          },
+          {
+            "policyDefinitionReferenceId": "/providers/Microsoft.Authorization/policyDefinitions/0015ea4d-51ff-4ce3-8d8c-f3f8f0179a56",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0015ea4d-51ff-4ce3-8d8c-f3f8f0179a56",
+            "parameters": {}
+          }
+        ]
+      }
+    }
+  ],
+  "outputs": {}
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Management/managementGroups",
+      "name": "bop-platform",
+      "apiVersion": "2021-04-01",
+      "scope": "/",
+      "properties": {
+        "displayName": "bop-platform",
+        "details": {
+          "parent": {
+            "id": "/providers/Microsoft.Management/managementGroups/bop"
+          }
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "AzOps-microsoft.management_managementgroups-nested",
+      "location": "northeurope",
+      "properties": {
+        "mode": "Incremental",
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "resources": [
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "bop-management",
+              "scope": "/",
+              "properties": {
+                "displayName": "bop-management",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/bop-platform"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "bop-identity",
+              "scope": "/",
+              "properties": {
+                "displayName": "bop-identity",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/bop-platform"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "bop-connectivity",
+              "scope": "/",
+              "properties": {
+                "displayName": "bop-connectivity",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/bop-platform"
+                  }
+                }
+              }
+            }
+          ],
+          "outputs": {}
+        }
+      },
+      "dependsOn": [
+        "/providers/Microsoft.Management/managementGroups/bop-platform"
+      ]
+    }
+  ],
+  "outputs": {}
+}
