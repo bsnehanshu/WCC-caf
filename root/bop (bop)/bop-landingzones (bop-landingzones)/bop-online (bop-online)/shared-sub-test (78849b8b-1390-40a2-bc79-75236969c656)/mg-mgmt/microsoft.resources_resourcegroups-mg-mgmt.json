@@ -12,11 +12,11 @@
       "tags": {
         "region": "nzcentral",
         "Owner": "'sneh'",
-        "Environment": "'prod'",
         "Application": "'DXC'",
         "CostCentre": "'marketing'",
-        "Support": "'TBC'",
-        "ManagedBy": "'sneh'"
+        "ManagedBy": "'sneh'",
+        "Environment": "'prod'",
+        "Support": "'TBC'"
       },
       "properties": {}
     }
