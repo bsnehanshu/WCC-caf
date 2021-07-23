@@ -11,12 +11,12 @@
       "location": "australiaeast",
       "tags": {
         "Application": "'DXC'",
-        "Environment": "'prod'",
-        "Support": "'TBC'",
-        "region": "nzcentral",
         "CostCentre": "'marketing'",
+        "Environment": "'prod'",
+        "ManagedBy": "'sneh'",
         "Owner": "'sneh'",
-        "ManagedBy": "'sneh'"
+        "Support": "'TBC'",
+        "region": "nzcentral"
       },
       "properties": {}
     }
