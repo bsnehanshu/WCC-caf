@@ -10,12 +10,12 @@
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Support": "'TBC'",
-        "Owner": "'sneh'",
-        "CostCentre": "'marketing'",
-        "Environment": "'prod'",
         "region": "nzcentral",
+        "Owner": "'sneh'",
+        "Environment": "'prod'",
         "Application": "'DXC'",
+        "CostCentre": "'marketing'",
+        "Support": "'TBC'",
         "ManagedBy": "'sneh'"
       },
       "properties": {}
