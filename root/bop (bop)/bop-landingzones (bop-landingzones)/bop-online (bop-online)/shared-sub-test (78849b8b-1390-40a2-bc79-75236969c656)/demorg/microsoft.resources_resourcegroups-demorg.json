@@ -9,7 +9,12 @@
       "name": "DemoRG",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
-      "tags": {},
+      "tags": {
+        "Application": "'cloudyapp'",
+        "Environment": "'prod'",
+        "ManagedBy": "'TBC'",
+        "Owner": "'TBC'"
+      },
       "properties": {}
     }
   ],
