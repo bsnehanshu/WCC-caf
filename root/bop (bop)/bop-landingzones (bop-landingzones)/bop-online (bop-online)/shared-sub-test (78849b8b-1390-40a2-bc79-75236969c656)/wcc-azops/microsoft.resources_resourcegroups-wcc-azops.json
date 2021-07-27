@@ -10,7 +10,8 @@
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Application": "'TBC'"
+        "Application": "'TBC'",
+        "Environment": "'TBC'"
       },
       "properties": {}
     }

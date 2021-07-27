@@ -6,11 +6,14 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "DefaultResourceGroup-EAU",
+      "name": "testrsgrp",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
       "tags": {
-        "Environment": "'TBC'"
+        "Application": "'TBC'",
+        "Environment": "'TBC'",
+        "ManagedBy": "'TBC'",
+        "Owner": "'TBC'"
       },
       "properties": {}
     }

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "174e7f0b736b453d8b45ae2a",
+      "apiVersion": "2021-06-01",
+      "location": "eastus",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "121ee1c2-00c6-45e7-892c-3cd4b40ef3c4",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656",
+        "NotScopes": [],
+        "DisplayName": "Tag Governance WCC",
+        "Description": "",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policySetDefinitions/tag_governance",
+        "Parameters": {},
+        "NonComplianceMessages": []
+      }
+    }
+  ],
+  "outputs": {}
+}
