@@ -9,7 +9,9 @@
       "name": "cloud-shell-storage-southeastasia",
       "apiVersion": "2019-05-01",
       "location": "southeastasia",
-      "tags": null,
+      "tags": {
+        "Environment": "'TBC'"
+      },
       "properties": {}
     }
   ],

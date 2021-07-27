@@ -9,7 +9,9 @@
       "name": "sb-asc-export",
       "apiVersion": "2019-05-01",
       "location": "australiaeast",
-      "tags": {},
+      "tags": {
+        "Environment": "'TBC'"
+      },
       "properties": {}
     }
   ],
