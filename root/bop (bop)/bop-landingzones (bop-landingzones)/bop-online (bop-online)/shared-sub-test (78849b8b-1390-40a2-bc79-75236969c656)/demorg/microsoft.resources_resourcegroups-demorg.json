@@ -13,7 +13,8 @@
         "Application": "'cloudyapp'",
         "Environment": "'prod'",
         "ManagedBy": "'TBC'",
-        "Owner": "'TBC'"
+        "Owner": "'snehanshu@gmail.com'",
+        "costcenter": "stark"
       },
       "properties": {}
     }
