@@ -14,7 +14,8 @@
         "Environment": "'prod'",
         "ManagedBy": "'TBC'",
         "Owner": "'snehanshu@gmail.com'",
-        "costcenter": "stark"
+        "costcenter": "stark",
+        "region": "ae"
       },
       "properties": {}
     }
