@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Management/managementGroups",
+      "name": "serko",
+      "apiVersion": "2021-04-01",
+      "scope": "/",
+      "properties": {
+        "displayName": "serko",
+        "details": {
+          "parent": {
+            "id": "/providers/Microsoft.Management/managementGroups/57fa4eca-b32e-44d1-a863-869ede8037d6"
+          }
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "AzOps-microsoft.management_managementgroups-nested",
+      "location": "northeurope",
+      "properties": {
+        "mode": "Incremental",
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "resources": [
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "serko-decommissioned",
+              "scope": "/",
+              "properties": {
+                "displayName": "serko-decommissioned",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/serko"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "serko-landingzones",
+              "scope": "/",
+              "properties": {
+                "displayName": "serko-landingzones",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/serko"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "serko-platform",
+              "scope": "/",
+              "properties": {
+                "displayName": "serko-platform",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/serko"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "serko-sandboxes",
+              "scope": "/",
+              "properties": {
+                "displayName": "serko-sandboxes",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/serko"
+                  }
+                }
+              }
+            }
+          ],
+          "outputs": {}
+        }
+      },
+      "dependsOn": [
+        "/providers/Microsoft.Management/managementGroups/serko"
+      ]
+    }
+  ],
+  "outputs": {}
+}

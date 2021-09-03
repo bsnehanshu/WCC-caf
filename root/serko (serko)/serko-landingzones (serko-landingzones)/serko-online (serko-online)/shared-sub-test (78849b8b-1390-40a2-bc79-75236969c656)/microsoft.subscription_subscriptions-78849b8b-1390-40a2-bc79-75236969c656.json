@@ -6,7 +6,7 @@
   "resources": [
     {
       "type": "Microsoft.Management/managementGroups/subscriptions",
-      "name": "bop-online/78849b8b-1390-40a2-bc79-75236969c656",
+      "name": "serko-online/78849b8b-1390-40a2-bc79-75236969c656",
       "apiVersion": "2021-04-01",
       "scope": "/"
     }
