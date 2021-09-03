@@ -6,14 +6,14 @@
   "resources": [
     {
       "type": "Microsoft.Management/managementGroups",
-      "name": "bop-online",
+      "name": "serko-sandboxes",
       "apiVersion": "2021-04-01",
       "scope": "/",
       "properties": {
-        "displayName": "bop-online",
+        "displayName": "serko-sandboxes",
         "details": {
           "parent": {
-            "id": "/providers/Microsoft.Management/managementGroups/bop-landingzones"
+            "id": "/providers/Microsoft.Management/managementGroups/serko"
           }
         }
       }
@@ -33,7 +33,7 @@
         }
       },
       "dependsOn": [
-        "/providers/Microsoft.Management/managementGroups/bop-online"
+        "/providers/Microsoft.Management/managementGroups/serko-sandboxes"
       ]
     }
   ],

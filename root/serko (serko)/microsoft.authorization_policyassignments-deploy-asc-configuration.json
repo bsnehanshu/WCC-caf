@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-ASC-Configuration",
+      "apiVersion": "2021-06-01",
+      "location": "australiaeast",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "70a3bfc1-f89e-49ef-bb70-076505184c75",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/serko",
+        "NotScopes": null,
+        "DisplayName": "Deploy Azure Security Center configuration",
+        "Description": "Deploy ASC configuration for Azure Defender and Security Contacts",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/serko/providers/Microsoft.Authorization/policySetDefinitions/Deploy-ASC-Config",
+        "Parameters": {
+          "emailSecurityContact": {
+            "value": "snehanshu.bhaisare@gmail.com"
+          },
+          "logAnalytics": {
+            "value": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/resourceGroups/serko-mgmt/providers/Microsoft.OperationalInsights/workspaces/serko-law"
+          },
+          "ascExportResourceGroupName": {
+            "value": "serko-asc-export"
+          },
+          "ascExportResourceGroupLocation": {
+            "value": "australiaeast"
+          },
+          "pricingTierVms": {
+            "value": "Standard"
+          },
+          "pricingTierSqlServers": {
+            "value": "Standard"
+          },
+          "pricingTierAppServices": {
+            "value": "Standard"
+          },
+          "pricingTierStorageAccounts": {
+            "value": "Standard"
+          },
+          "pricingTierContainerRegistry": {
+            "value": "Standard"
+          },
+          "pricingTierKeyVaults": {
+            "value": "Standard"
+          },
+          "pricingTierSqlServerVirtualMachines": {
+            "value": "Standard"
+          },
+          "pricingTierKubernetesService": {
+            "value": "Standard"
+          },
+          "pricingTierArm": {
+            "value": "Standard"
+          },
+          "pricingTierDns": {
+            "value": "Standard"
+          }
+        },
+        "NonComplianceMessages": null
+      }
+    }
+  ],
+  "outputs": {}
+}
