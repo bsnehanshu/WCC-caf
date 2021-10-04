@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "e1b2d7c727e549f0aa84842c",
+      "apiVersion": "2021-06-01",
+      "location": "eastus",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "09e6b55e-3c1b-481b-b48a-7580b3f6a584",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656",
+        "NotScopes": [],
+        "DisplayName": "New Zealand ISM Restricted",
+        "Description": null,
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/d1a462af-7e6d-4901-98ac-61570b4ed22a",
+        "Parameters": {
+          "MembersToInclude-30f71ea1-ac77-4f26-9fc5-2d926bbd4ba7": {
+            "value": "snehanshu"
+          },
+          "MembersToExclude-69bf4abd-ca1e-4cf6-8b5a-762d42e61d4f": {
+            "value": "snehanshu"
+          }
+        },
+        "NonComplianceMessages": []
+      }
+    }
+  ],
+  "outputs": {}
+}
