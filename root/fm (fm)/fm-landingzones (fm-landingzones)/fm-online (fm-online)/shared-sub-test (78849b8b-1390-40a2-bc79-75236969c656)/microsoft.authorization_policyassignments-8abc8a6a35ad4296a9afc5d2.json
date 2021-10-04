@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "8abc8a6a35ad4296a9afc5d2",
+      "apiVersion": "2021-06-01",
+      "location": "eastus",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "08767bea-13dd-4b54-9bca-e7bf2263dd5a",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656",
+        "NotScopes": [],
+        "DisplayName": "NIST SP 800-53 Rev. 4",
+        "Description": null,
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/cf25b9c1-bd23-4eb6-bd2c-f4f3ac644a5f",
+        "Parameters": {},
+        "NonComplianceMessages": []
+      }
+    }
+  ],
+  "outputs": {}
+}

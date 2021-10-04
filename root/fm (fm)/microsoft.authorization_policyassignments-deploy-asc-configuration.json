@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-ASC-Configuration",
+      "apiVersion": "2021-06-01",
+      "location": "australiaeast",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "992ffd47-d487-437d-999d-fd91536b9963",
+        "tenantId": "57fa4eca-b32e-44d1-a863-869ede8037d6"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/FM",
+        "NotScopes": null,
+        "DisplayName": "Deploy Azure Security Center configuration",
+        "Description": "Deploy ASC configuration for Azure Defender and Security Contacts",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/FM/providers/Microsoft.Authorization/policySetDefinitions/Deploy-ASC-Config",
+        "Parameters": {
+          "emailSecurityContact": {
+            "value": "snehanshu.bhaisare@gmail.com"
+          },
+          "logAnalytics": {
+            "value": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/resourceGroups/FM-mgmt/providers/Microsoft.OperationalInsights/workspaces/FM-law"
+          },
+          "ascExportResourceGroupName": {
+            "value": "FM-asc-export"
+          },
+          "ascExportResourceGroupLocation": {
+            "value": "australiaeast"
+          },
+          "pricingTierVms": {
+            "value": "Standard"
+          },
+          "pricingTierSqlServers": {
+            "value": "Free"
+          },
+          "pricingTierAppServices": {
+            "value": "Standard"
+          },
+          "pricingTierStorageAccounts": {
+            "value": "Standard"
+          },
+          "pricingTierContainerRegistry": {
+            "value": "Standard"
+          },
+          "pricingTierKeyVaults": {
+            "value": "Standard"
+          },
+          "pricingTierSqlServerVirtualMachines": {
+            "value": "Free"
+          },
+          "pricingTierKubernetesService": {
+            "value": "Standard"
+          },
+          "pricingTierArm": {
+            "value": "Standard"
+          },
+          "pricingTierDns": {
+            "value": "Standard"
+          }
+        },
+        "NonComplianceMessages": null
+      }
+    }
+  ],
+  "outputs": {}
+}

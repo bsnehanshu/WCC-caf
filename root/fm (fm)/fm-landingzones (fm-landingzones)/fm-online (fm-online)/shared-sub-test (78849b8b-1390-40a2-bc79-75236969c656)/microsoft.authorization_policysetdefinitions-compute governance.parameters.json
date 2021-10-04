@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "Compute Governance",
+        "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+        "PolicySetDefinitionId": "/subscriptions/78849b8b-1390-40a2-bc79-75236969c656/providers/Microsoft.Authorization/policySetDefinitions/Compute Governance",
+        "Properties": {
+          "Description": "Contains common Compute Governance policies",
+          "DisplayName": "Compute Governance",
+          "Metadata": {
+            "category": "Custom"
+          },
+          "Parameters": {
+            "allowedLocations": {
+              "type": "Array",
+              "metadata": {
+                "description": "The list of locations that resource groups can be created in.",
+                "displayName": "Allowed locations",
+                "strongType": "location"
+              },
+              "defaultValue": [
+                "australiaeast",
+                "australiasoutheast"
+              ]
+            },
+            "listOfAllowedVMSKUs": {
+              "type": "Array",
+              "metadata": {
+                "description": "The list of size SKUs that can be specified for virtual machines.",
+                "displayName": "Allowed VM Size SKUs",
+                "strongType": "VMSKUs"
+              },
+              "defaultValue": [
+                "standard_b2s",
+                "standard_b1s",
+                "standard_d2",
+                "standard_d2_v2"
+              ]
+            }
+          },
+          "PolicyDefinitionGroups": null,
+          "PolicyDefinitions": [
+            {
+              "policyDefinitionReferenceId": "15086293629187003799",
+              "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+              "parameters": {
+                "listOfAllowedLocations": {
+                  "value": "[parameters('allowedLocations')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "890783069641407941",
+              "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cccc23c7-8427-4f53-ad12-b6a63eb452b3",
+              "parameters": {
+                "listOfAllowedSKUs": {
+                  "value": "[parameters('listOfAllowedVMSKUs')]"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
